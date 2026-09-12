@@ -18,4 +18,4 @@ orthogonal_two_source
 frequency_impedance_variance_consistency
 ```
 
-For a release-quality reproduction, record the upstream commit, dataset checksums, Python version, PyTorch version, device, command line, and the resulting target hashes alongside the audit JSON. Those environment-specific records are intentionally not included in this repository snapshot.
+For a release-quality reproduction, record the runtime environment identifier, dataset checksums, Python version, PyTorch version, device, command line, and resulting target hashes alongside the audit JSON. Those environment-specific records are intentionally kept outside this repository.

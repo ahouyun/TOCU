@@ -8,8 +8,8 @@ head is fitted on the validation split and combines two orthogonal sources:
 * a residual covariance on the orthogonal complement of those components.
 
 The scale is conditioned on the backbone's high-frequency residual energy and a
-dynamic road-impedance risk score.  This keeps the first experiment isolated
-from the upstream repositories while implementing the three approved ideas:
+dynamic road-impedance risk score.  The implementation contains the three
+TOCU ideas:
 frequency-conditioned uncertainty, orthogonal two-source uncertainty, and
 frequency/impedance/variance consistency calibration.
 

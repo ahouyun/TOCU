@@ -1,6 +1,6 @@
 # Release Scope
 
-This is the first private-repository staging scope. It is intentionally code-first and small enough to review before the GitHub repository is created.
+This repository is intentionally code-first and contains only the TOCU implementation, tests, audited TOCU snapshots, and reproduction notes.
 
 ## Included
 
@@ -65,11 +65,6 @@ Public filenames use stable semantic names. They do not expose local experiment 
 | training checkpoint output | `checkpoint.pt` |
 | distribution summary output | `summary.npz` |
 
-## Before pushing
+## Release notes
 
-1. Confirm the GitHub owner and repository name.
-2. Confirm that all authors approve the private repository scope.
-3. Confirm the upstream and dataset licensing position.
-4. Decide whether to add `MIT`, `Apache-2.0`, or another license.
-5. Re-run the static credential/path scan and unit tests from this directory.
-6. Initialize Git and push only after the staging tree is reviewed.
+The repository does not include raw data, runtime-only resources, credentials, or code from other projects. Add a license only after all authors confirm the intended terms.

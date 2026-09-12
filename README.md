@@ -2,7 +2,7 @@
 
 Code and selected result snapshots for the TOCU probabilistic traffic forecasting study.
 
-The repository contains the TOCU uncertainty head, the causal history adapter, training and refit entry points, fail-closed result audits, and a small set of representative figures. Raw datasets, upstream repositories, checkpoints, full prediction arrays, and private experiment infrastructure are intentionally excluded.
+The repository contains the TOCU uncertainty head, causal history adapter, training and refit entry points, fail-closed result audits, and representative TOCU figures. Raw datasets, runtime-only resources, checkpoints, full prediction arrays, and private infrastructure are intentionally excluded.
 
 ## Repository layout
 
@@ -34,7 +34,7 @@ python -m compileall -q tocu tests
 
 ## Training
 
-The training entry point expects an external project root containing the upstream model repository and dependencies, plus a run root containing the prepared job configuration and frozen point-prediction checkpoint:
+The training entry point expects an external runtime root containing the point-backbone environment and dependencies, plus a run root containing the prepared job configuration and frozen point-prediction checkpoint:
 
 ```bash
 python -m tocu.train \
