@@ -45,9 +45,9 @@ python -m tocu.train \
   --output runs/tocu/PEMS08/seed0
 ```
 
-Use `--help` to inspect the complete set of training and ablation options. Training writes `metrics.json`, `history.json`, `checkpoint.pt`, and `summary.npz`; formal refitting additionally writes `selection.json`.
+Use `--help` to inspect the complete set of TOCU training and ablation options. Runtime artifacts are written to the local output directory supplied by the user.
 
-The refit entry point uses a completed source run and a validation-only ratio probe:
+The refit entry point provides the TOCU calibration refitting workflow:
 
 ```bash
 python -m tocu.refit --help
@@ -81,4 +81,4 @@ The result files contain TOCU-only audited snapshots and do not include comparis
 
 ## License
 
-No license is included in this staging release yet. Add a license only after all authors have confirmed the intended terms and third-party obligations.
+No license is included yet. Add one after all authors confirm the intended terms.

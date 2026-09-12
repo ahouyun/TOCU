@@ -61,9 +61,6 @@ Public filenames use stable semantic names. They do not expose local experiment 
 | integrated audit | `tocu/audit.py` |
 | Seattle audit | `tocu/audit_seattle.py` |
 | result metrics | `results/metrics.json` |
-| selection record | `selection.json` |
-| training checkpoint output | `checkpoint.pt` |
-| distribution summary output | `summary.npz` |
 
 ## Release notes
 
