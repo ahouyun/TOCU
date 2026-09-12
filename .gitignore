@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.env
+
+# Local datasets, upstream repositories, jobs, and experiment outputs.
+data/
+datasets/
+repos/
+deps/
+jobs/
+vendor/
+runs/
+checkpoints/
+outputs/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.log
+
+# Local IDE and OS files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+

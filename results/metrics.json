@@ -1,0 +1,69 @@
+{
+  "status": "audited_snapshot",
+  "model": "TOCU",
+  "datasets": [
+    "PEMS03",
+    "PEMS04",
+    "PEMS08",
+    "Seattle"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "metrics": [
+    "MAE",
+    "RMSE",
+    "MAPE",
+    "CRPS",
+    "MIS"
+  ],
+  "protocol": {
+    "split": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "input_length": 12,
+    "forecast_length": 12,
+    "distribution_samples": 50,
+    "test_read_policy": "test labels are consumed only by final evaluation",
+    "innovation_flags": [
+      "frequency_conditioned",
+      "orthogonal_two_source",
+      "frequency_impedance_variance_consistency"
+    ]
+  },
+  "values": {
+    "PEMS03": {
+      "MAE": {"mean": 14.2409878327, "sample_std": 0.0474721694},
+      "RMSE": {"mean": 23.2912405653, "sample_std": 0.1860469166},
+      "MAPE": {"mean": 12.6066118855, "sample_std": 0.1677211254},
+      "CRPS": {"mean": 0.0656545188, "sample_std": 0.0002311708},
+      "MIS": {"mean": 134.3970654450, "sample_std": 1.1030847471}
+    },
+    "PEMS04": {
+      "MAE": {"mean": 18.2523563055, "sample_std": 0.0255774125},
+      "RMSE": {"mean": 30.4010210543, "sample_std": 0.0425161810},
+      "MAPE": {"mean": 11.4343793164, "sample_std": 0.0435761583},
+      "CRPS": {"mean": 0.0672868470, "sample_std": 0.0001459989},
+      "MIS": {"mean": 169.3826000188, "sample_std": 0.5110673650}
+    },
+    "PEMS08": {
+      "MAE": {"mean": 13.5545896732, "sample_std": 0.0086926833},
+      "RMSE": {"mean": 23.3483643590, "sample_std": 0.0299231234},
+      "MAPE": {"mean": 8.3292535405, "sample_std": 0.0090532961},
+      "CRPS": {"mean": 0.0470365292, "sample_std": 0.0000073638},
+      "MIS": {"mean": 123.8558591649, "sample_std": 0.5264710640}
+    },
+    "Seattle": {
+      "MAE": {"mean": 93.2081195008, "sample_std": 0.2861101283},
+      "RMSE": {"mean": 152.2415181504, "sample_std": 1.2655015363},
+      "MAPE": {"mean": 16.7996548611, "sample_std": 0.1407510067},
+      "CRPS": {"mean": 0.0889429531, "sample_std": 0.0004617304},
+      "MIS": {"mean": 1065.5291165369, "sample_std": 26.7458636975}
+    }
+  },
+  "provenance_note": "Values are copied from the local passed formal audits. Full run directories, checkpoints, prediction arrays, target hashes, and machine-specific paths are excluded from the public staging tree."
+}

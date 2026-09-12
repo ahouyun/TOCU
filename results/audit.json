@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "model": "TOCU",
+  "datasets": [
+    "PEMS03",
+    "PEMS04",
+    "PEMS08",
+    "Seattle"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "checks": [
+    "artifact completeness",
+    "target shape consistency",
+    "target hash consistency across seeds",
+    "independent MAE/RMSE/MAPE/MIS recomputation",
+    "split and horizon configuration",
+    "innovation flag presence",
+    "validation-only selection and final-test-read policy"
+  ],
+  "target_shapes": {
+    "PEMS03": [5218, 12, 358, 1],
+    "PEMS04": [3375, 12, 307, 1],
+    "PEMS08": [3548, 12, 170, 1],
+    "Seattle": [1729, 12, 323, 1]
+  },
+  "recomputed_metric_tolerance": {
+    "MAE": 0.0005,
+    "RMSE": 0.0005,
+    "MAPE": 0.0005,
+    "MIS": 0.005
+  },
+  "note": "This compact summary is derived from passed local formal audits. Full audit JSON, target hashes, checkpoints, and prediction arrays remain outside the first public release."
+}
