@@ -38,7 +38,7 @@ The training entry point accepts local runtime and run directories containing th
 
 ```bash
 python -m tocu.train \
-  --root /path/to/external-project \
+  --root /path/to/runtime-root \
   --run-root /path/to/run-root \
   --dataset PEMS08 \
   --seed 0 \
