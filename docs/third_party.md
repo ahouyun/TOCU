@@ -1,6 +1,6 @@
-# Third-Party Scope
+# Repository Boundaries
 
-This repository contains TOCU code and documentation only. Runtime-only dependencies, datasets, and other project implementations are kept outside the repository.
+This repository contains TOCU code and documentation only. Runtime-only resources and datasets are kept outside the repository.
 
 The shared practices adopted here are:
 
@@ -19,4 +19,4 @@ The following are deliberately out of scope for the first release:
 - remote GPU, SSH, queue, supervisor, or synchronization scripts;
 - paper source, build caches, slides, and internal analysis tools.
 
-Any runtime dependency must be installed and reviewed separately; it is not redistributed or bundled here.
+Runtime resources must be prepared separately; they are not redistributed or bundled here.

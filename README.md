@@ -21,7 +21,7 @@ Use Python 3.10 or newer. Install the public dependencies with:
 python -m pip install -r requirements.txt
 ```
 
-The training path accepts a caller-provided point-backbone environment and prepared data outside this repository. TOCU does not redistribute that external environment or its data.
+The training path uses locally prepared runtime resources that are intentionally not included in this repository.
 
 ## Quick checks
 
@@ -34,7 +34,7 @@ python -m compileall -q tocu tests
 
 ## Training
 
-The training entry point expects an external runtime root containing the point-backbone environment and dependencies, plus a run root containing the prepared job configuration and frozen point-prediction checkpoint:
+The training entry point accepts local runtime and run directories containing the prepared configuration and frozen point-prediction checkpoint:
 
 ```bash
 python -m tocu.train \
